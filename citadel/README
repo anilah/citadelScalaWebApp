@@ -1,4 +1,6 @@
 This is your new Play application
 =====================================
 
-This file will be packaged with your application, when using `play dist`.
+Calculate Profit/loss button is Always doing calculation on last transcation in GRID
+Delete Transcation will remove all trnscation from playframework cache
+Stock name ,Buy/sell,Quantity and Date are editable in grid on double click
