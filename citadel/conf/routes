@@ -1,0 +1,17 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+#GET     /                           controllers.Application.index
+
+POST    /buysellstocks							com.citadel.project.controller.BuySellController.index
+POST    /loadstocks							com.citadel.project.controller.BuySellController.loadstocks
+POST    /loadFX							com.citadel.project.controller.BuySellController.loadFX
+POST    /clearCache							com.citadel.project.controller.BuySellController.clearCache
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET       /citadel/*file                           controllers.Assets.at(path="/public/html/", file)
+GET     /javascripts/*file               controllers.Assets.at(path="/public/javascripts/", file)
+GET     /stylesheets/*file               controllers.Assets.at(path="/public/stylesheets/", file)

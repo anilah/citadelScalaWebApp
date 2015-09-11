@@ -1,0 +1,19 @@
+    .grid {
+      width: 1500px;
+      height: 350px;
+    }
+    .red { 
+    	background:-o-linear-gradient(bottom, #5fbf00 5%, #5fbf00 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5fbf00), color-stop(1, #5fbf00) );
+	background:-moz-linear-gradient( center top, #5fbf00 5%, #5fbf00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#5fbf00", endColorstr="#5fbf00");	background: -o-linear-gradient(top,#5fbf00,ff5656);
+	background-color:#5fbf00;
+	border:0px solid #3f7f00;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+   }
+   
+	.blue { color: blue;  }
