@@ -22,12 +22,16 @@ java 1.6+
 Amazon Cloud (EC2 Server) for hosting
 
 Web URL
- 
+====================================================================== 
 http://54.255.189.68:9000/citadelproject
 
 Or
 
 http://ec2-54-255-189-68.ap-southeast-1.compute.amazonaws.com:9000/citadelproject
+
+Source Code URL
+========================================
+https://github.com/anilah/citadelScalaWebApp.git
 
 
 
