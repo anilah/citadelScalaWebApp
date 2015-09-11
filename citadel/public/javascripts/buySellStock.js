@@ -93,7 +93,7 @@
             	[{ id: 'Buy', buysell: 'Buy' },{ id: 'Sell', buysell: 'Sell' }] 
         },
         { name: 'Quantity',enableCellEdit: true,maxWidth: 100,headerCellClass:'red'   },
-        { name: 'Date',enableCellEdit: true, type: 'date',cellFilter:'date:"yyyy-MM-dd"',maxWidth: 100,headerCellClass:'red'  },
+        { name: 'Date',enableCellEdit: true, type: 'date',cellFilter:'date:"yyyy-MM-dd"',maxWidth: 150,headerCellClass:'red'  },
         { name: 'Currency',enableCellEdit: false,maxWidth: 100,headerCellClass:'red'  },
         { name: 'Price Local Currency',enableCellEdit: false,maxWidth:180,headerCellClass:'red' },
         { name: 'Fx Rate',enableCellEdit: false,maxWidth: 100,headerCellClass:'red'  },
