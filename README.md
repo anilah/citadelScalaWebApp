@@ -14,7 +14,7 @@ Application Usage Guideline
 
 4)To calculate Totalcost following formula has been used
 
-  = Quantity*(price in local curr)*Fxrate
+  = Quantity * (price in local curr) * Fxrate
 
 
 Technical Stack Specification
