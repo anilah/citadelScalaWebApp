@@ -1,0 +1,90 @@
+    <!doctype html>
+    <html ng-app="app">
+      <head>
+      
+      
+        <script src="/assets/javascripts/angular.min.js"></script>
+        <script src="/assets/javascripts/message-center.js"></script>
+        <script src="/assets/javascripts/ui-grid.js"></script>
+        <script src="/assets/javascripts/buySellStock.js"></script>
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/ui-grid.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/stylishTables.css" />
+       
+      </head>
+      <body>
+      
+      <div ng-controller="loadStock" data-ng-init="init()">
+      
+	     <div class="CSSTableGenerator" style="float:right;width:450px;height:250px;left:200px;position:absolute">
+	          <table id="errorCategoryTabledata">
+	          <thead>
+	           <tr>
+	             <th>StockName</th>
+	             <th>Currency</th>
+	             <th>Price</th>
+	              <th>Date</th>
+	           </tr>
+	           </thead>
+	           
+	          <tbody>
+	          <tr ng-repeat="stock in stocks">
+	           <td>{{stock.stock}}</td>
+	            <td>{{stock.currency}}</td>
+	            <td>{{stock.price}}</td>
+	            <td>{{stock.date}}</td>
+	          
+	          </tr>
+	                   
+	          
+	          </tbody>
+	           
+	           </table>
+	           
+	           
+		</div>
+</div>		
+		 <div ng-controller="loadFX" data-ng-init="init()">
+		 <div class="CSSTableGenerator" id="righttable" style="float:right;width:350px;height:250px;right:470px;position:absolute">
+          <table id="Tabledata">
+          <thead>
+           <tr>
+             <th>Currency</th>
+             <th>FX Rate</th>
+             <th>Date</th>
+           </tr>
+           </thead>
+           
+          <tbody>
+         <tr ng-repeat="curr in currencies">
+	           <td>{{curr.currName}}</td>
+	            <td>{{curr.fxrate}}</td>
+	            <td>{{curr.date}}</td>
+	    </tr>
+        
+          
+          
+          </tbody>
+           
+           </table>
+           
+           
+	</div>
+      
+ 	</div> 
+ 	
+ 	
+     
+        <div ng-controller="MainCtrl" style="bottom:50px;position:absolute">
+	        <div style="float:right;width:450px;left:0px;position:absolute">
+	          <button type="button" id="addData" class="btn btn-success" ng-click="addData()">Buy/Sell Stock</button>
+	          <button type="button" id="calculatePL" class="btn btn-success" ng-click="calprofitloss()">Calculate Profit/Loss</button>
+	          <button type="button" id="reset" class="btn btn-success" ng-click="reset()">Delete Transcations</button>
+	          </div >
+            	<div mc-messages style="float:right;width:450px;right:400px;position:absolute;background-color:#ff5656;	border-width:2px;text-align:center,border-radius:15px;"></div>    
+          <br>
+          <br>
+          <div id="grid1" ui-grid="gridOpts" ui-grid-edit class="grid"></div>
+        </div>
+      </body>
+    </html>
