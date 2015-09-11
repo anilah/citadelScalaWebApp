@@ -1,6 +1,28 @@
-This is your new Play application
+This is Play application Based using Scala
 =====================================
 
-Calculate Profit/loss button is Always doing calculation on last transcation in GRID
-Delete Transcation will remove all trnscation from playframework cache
-Stock name ,Buy/sell,Quantity and Date are editable in grid on double click
+Application Usage Guideline
+=========================================================
+
+1)Calculate Profit/loss button is Always doing calculation on last transcation in GRID
+2)Delete Transcation will remove all transcation from playframework cache
+3)Stock name,Buy/sell,Quantity and Date are editable in grid on double click
+
+
+
+Technical Stack Specification
+==============================================================
+AngularJs 1.4.0
+Html5
+AngularUI grid 3.0
+Scala 2.10
+Playframework 2.2.0
+java 1.6+
+
+
+
+
+
+
+
+
